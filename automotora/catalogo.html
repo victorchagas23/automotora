@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Catálogo</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Catálogo de Autos</h1>
+<nav><a href="index.html">Inicio</a><a href="catalogo.html">Catálogo</a><a href="contacto.html">Contacto</a></nav>
+</header>
+
+<h2 class="titulo">Autos Disponibles</h2>
+
+<div class="autos">
+    <div class="auto">
+        <img src="imagenes/toyota_Corolla_Hybrid_2020.jpg">
+        <h3>Corolla 2020</h3><p>$8.500.000</p>
+        <button onclick="agregarCarrito('Corolla 2020',8500000)">Agregar</button>
+    </div>
+
+    <div class="auto">
+        <img src="imagenes/Civic 2018.jpg">
+        <h3>Civic 2018</h3><p>$7.200.000</p>
+        <button onclick="agregarCarrito('Civic 2018',7200000)">Agregar</button>
+    </div>
+
+    <div class="auto">
+        <img src="imagenes/ford-mustang2017.jpg">
+        <h3>Mustang 2017</h3><p>$19.900.000</p>
+        <button onclick="agregarCarrito('Mustang 2017',19900000)">Agregar</button>
+    </div>
+</div>
+
+<div id="carritoModal">
+    <h2>Carrito</h2>
+    <div id="itemsCarrito"></div>
+    <button id="cerrarCarrito">Cerrar</button>
+</div>
+
+<script src="script.js"></script>
+</body></html>
